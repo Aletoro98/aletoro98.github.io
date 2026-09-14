@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="it" data-lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alessandro Riina — Digital Humanities</title>
+<meta name="description" content="Progetto e valuto esperienze digitali per l'educazione e il patrimonio culturale. Serious game, dati culturali, NLP.">
+<meta property="og:title" content="Alessandro Riina — Digital Humanities">
+<meta property="og:description" content="Progetto e valuto esperienze digitali per l'educazione e il patrimonio culturale.">
+<meta property="og:image" content="assets/img/cdf-mappa-hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top">Alessandro Riina</a>
+    <nav class="navlinks">
+      <a href="#progetti"><span class="it">Progetti</span><span class="en">Projects</span></a>
+      <a href="#tesi"><span class="it">Tesi</span><span class="en">Thesis</span></a>
+      <a href="#esperienza"><span class="it">Esperienza</span><span class="en">Experience</span></a>
+      <a href="#competenze"><span class="it">Competenze</span><span class="en">Skills</span></a>
+      <a href="#contatti"><span class="it">Contatti</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="toggles">
+      <button class="tbtn" id="langBtn" type="button">EN</button>
+      <button class="tbtn" id="themeBtn" type="button" aria-label="Tema">◐</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<div class="wrap hero">
+  <div class="hero-grid">
+    <img class="avatar" src="assets/img/foto.jpg" alt="Alessandro Riina">
+    <div>
+      <p class="eyebrow">Digital Humanities · Palermo</p>
+      <h1>Alessandro Riina</h1>
+      <p class="claim it">Progetto e valuto esperienze digitali per l'educazione e il patrimonio culturale.</p>
+      <p class="claim en">I design digital experiences for education and cultural heritage — and I evaluate whether they work.</p>
+
+      <p class="it">Laureando magistrale in <strong>Digital Humanities per l'industria culturale</strong> (LM-43) all'Università di Palermo, con una triennale in Beni Culturali alle spalle. Lavoro nel punto in cui il game design incontra la ricerca educativa: progetto ambienti interattivi e poi verifico, con metodi qualitativi, se reggono davvero in un contesto didattico.</p>
+      <p class="en">Master's candidate in <strong>Digital Humanities for the Cultural Industry</strong> (LM-43) at the University of Palermo, with a bachelor's in Cultural Heritage. I work where game design meets educational research: I build interactive environments, then use qualitative methods to test whether they actually hold up in a classroom.</p>
+
+      <p class="it">Il mio lavoro più recente, <em>Custodi del Flascio</em>, è un serious game sulla biodiversità nato durante il tirocinio in ARPA Sicilia, oggi online e oggetto della mia tesi di laurea.</p>
+      <p class="en">My most recent work, <em>Custodi del Flascio</em>, is a serious game on biodiversity built during my internship at ARPA Sicilia. It is online today and is the subject of my master's thesis.</p>
+
+      <div class="cta">
+        <a class="btn btn-solid" href="https://custodi-del-flascio.vercel.app" target="_blank" rel="noopener"><span class="it">Gioca a Custodi del Flascio</span><span class="en">Play Custodi del Flascio</span></a>
+        <a class="btn btn-ghost" href="#contatti"><span class="it">Contattami</span><span class="en">Get in touch</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PROGETTI ============ -->
+<section id="progetti">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="it">Progetti</span><span class="en">Projects</span></h2>
+      <p class="it">Ogni scheda dichiara il proprio stato: <strong>realizzato</strong> se è stato costruito davvero ed è consultabile, <strong>concept</strong> se è rimasto un progetto su carta, <strong>accademico</strong> se è un lavoro d'esame. Un solo progetto è oggi attivo e mantenuto.</p>
+      <p class="en">Each entry states what it actually is: <strong>built</strong> if it exists and can be opened, <strong>concept</strong> if it never left the page, <strong>academic</strong> if it was coursework. Only one project is currently live and maintained.</p>
+    </div>
+
+    <!-- ---- Custodi del Flascio ---- -->
+    <article class="project flagship">
+      <img class="p-cover" src="assets/img/cdf-mappa-hero.jpg" alt="La mappa del Bosco del Flascio">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-live"><span class="it">Realizzato · online</span><span class="en">Built · live</span></span>
+        </div>
+        <h3>Custodi del Flascio</h3>
+        <p class="p-meta it">Serious game gestionale sulla biodiversità · ARPA Sicilia, 2026 · React, Next.js, TypeScript</p>
+        <p class="p-meta en">Management serious game on biodiversity · ARPA Sicilia, 2026 · React, Next.js, TypeScript</p>
+
+        <p class="it">Il giocatore è il <strong>Coordinatore</strong> del sito Natura 2000 ITA070007 «Bosco del Flascio», nel Parco dei Nebrodi. Ha sette giornate, 35.000 € di fondi pubblici e quattro specie protette dall'Unione Europea da portare vive alla fine della settimana. Ogni giorno arriva un'emergenza e ogni emergenza costringe a scegliere tra un intervento gratuito ma provvisorio e uno risolutivo ma caro.</p>
+        <p class="en">The player is the <strong>Coordinator</strong> of Natura 2000 site ITA070007 "Bosco del Flascio", in the Nebrodi Park. Seven days, €35,000 of public funds, and four EU-protected species that must still be alive at the end of the week. Each day brings an emergency, and each emergency forces a choice between a free but temporary fix and a decisive but expensive one.</p>
+
+        <div class="facts">
+          <div class="fact"><b>7</b><span class="it">giornate di gioco</span><span class="en">in-game days</span></div>
+          <div class="fact"><b>4</b><span class="it">specie protette reali</span><span class="en">real protected species</span></div>
+          <div class="fact"><b>35.000 €</b><span class="it">budget da gestire</span><span class="en">budget to manage</span></div>
+          <div class="fact"><b>3</b><span class="it">docenti valutatori</span><span class="en">expert teacher reviewers</span></div>
+        </div>
+
+        <p class="it">Contenuti, specie, pressioni e misure non sono inventati: provengono dalla documentazione del sito redatta ai sensi della <strong>Direttiva Habitat 92/43/CEE</strong>. La <em>Petagnaea gussonei</em> che rischia di sparire dal quadro comandi è un relitto botanico del Terziario che cresce solo in poche zone umide dei Nebrodi.</p>
+        <p class="en">Content, species, pressures and measures are not invented: they come from the site's own conservation documentation under the <strong>EU Habitats Directive 92/43/EEC</strong>. The <em>Petagnaea gussonei</em> that can vanish from the dashboard is a Tertiary botanical relict growing only in a few wet patches of the Nebrodi mountains.</p>
+
+        <div class="shots">
+          <figure>
+            <img src="assets/img/cdf-2-mappa.jpg" alt="La mappa di gioco con i gettoni delle quattro specie e l'allerta della giornata">
+            <figcaption class="it"><b>1.</b> La mappa: i gettoni delle quattro specie e il triangolo rosso dell'emergenza del giorno.</figcaption>
+            <figcaption class="en"><b>1.</b> The map: the four species tokens and the red triangle marking the day's emergency.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cdf-3-emergenza.png" alt="La finestra di emergenza del giorno 1 con le due alternative di risposta">
+            <figcaption class="it"><b>2.</b> La decisione: una squadra gratuita ma provvisoria, oppure recinzioni definitive che costano.</figcaption>
+            <figcaption class="en"><b>2.</b> The decision: a free but temporary patrol, or permanent fencing that costs real money.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cdf-6-report.png" alt="Il Report Giornaliero dopo la scelta gratuita: Petagnaea distrutta">
+            <figcaption class="it"><b>3.</b> La conseguenza: «hai scelto la via del risparmio», e la Petagnaea è distrutta.</figcaption>
+            <figcaption class="en"><b>3.</b> The consequence: "you chose the cheap route", and the Petagnaea is destroyed.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/cdf-4-scheda.png" alt="Scheda scientifica della Petagnaea gussonei nel Database Natura 2000">
+            <figcaption class="it"><b>4.</b> La scheda del Database Natura 2000: l'Appunto del Biologo contiene l'indizio risolutivo.</figcaption>
+            <figcaption class="en"><b>4.</b> The Natura 2000 database card: the Biologist's Note holds the clue that solves it.</figcaption>
+          </figure>
+        </div>
+
+        <div class="callout">
+          <span class="lab it">La scelta di design che conta</span>
+          <span class="lab en">The design decision that matters</span>
+          <p class="it">L'estinzione è irreversibile. Se una specie muore, la sua icona si spegne e la sua scheda scientifica diventa per sempre inaccessibile: il giocatore perde non solo un punteggio, ma una fonte di conoscenza. È la traduzione in regola eseguibile dell'idea che sta alla base di tutto il progetto — che la tutela ambientale non si insegna raccontandola, ma facendola decidere.</p>
+          <p class="en">Extinction is irreversible. When a species dies its icon goes dark and its scientific card becomes permanently unreachable: the player loses not just a score but a source of knowledge. This is the executable-rule translation of the idea behind the whole project — that environmental stewardship is not taught by describing it, but by making someone decide it.</p>
+        </div>
+
+        <p class="it"><strong>Il percorso tecnico.</strong> La prima idea nasce in GDevelop, passa a Twine per esplorare la struttura narrativa a bivi, e arriva infine a una riscrittura completa in React e Next.js: l'unica forma capace di reggere il visore permanente dei parametri, i modali sovrapposti e l'uso su tablet in classe. Tutti i contenuti sono statici e definiti nel codice — una scelta deliberata, perché la riproducibilità dell'esperienza tra utenti diversi era un requisito della sperimentazione.</p>
+        <p class="en"><strong>The technical path.</strong> The first idea was built in GDevelop, moved to Twine to explore the branching narrative, and was finally rewritten from scratch in React and Next.js — the only form that could carry the persistent parameter bar, stacked modals and classroom tablet use. All content is static and defined in code: a deliberate choice, because identical experience across users was a requirement of the study.</p>
+
+        <div class="p-links">
+          <a href="https://custodi-del-flascio.vercel.app" target="_blank" rel="noopener"><span class="it">Gioca online →</span><span class="en">Play online →</span></a>
+          <a href="https://github.com/Aletoro98/custodi_del_flascio" target="_blank" rel="noopener"><span class="it">Codice sorgente (MIT) →</span><span class="en">Source code (MIT) →</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---- iMuseiDiPalermo ---- -->
+    <article class="project">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-live"><span class="it">Realizzato · non aggiornato</span><span class="en">Built · no longer updated</span></span>
+        </div>
+        <h3>iMuseiDiPalermo</h3>
+        <p class="p-meta it">Portale divulgativo sui musei palermitani · progetto universitario, 2025 · WordPress</p>
+        <p class="p-meta en">Public guide to the museums of Palermo · university project, 2025 · WordPress</p>
+
+        <p class="it">Un sito che raccoglie e organizza i musei di Palermo in sette famiglie tematiche — case museo, musei storici e archeologici, arte antica e tradizionale, arte moderna e contemporanea, storia naturale, etnografici, marittimi — con schede di approfondimento, sezione eventi, ricerca interna e una cura grafica coerente.</p>
+        <p class="en">A site that collects and organises Palermo's museums into seven thematic families — house museums, historical and archaeological, ancient and traditional art, modern and contemporary art, natural history, ethnographic, maritime — with detailed entries, an events section, internal search and a consistent visual identity.</p>
+
+        <p class="it">Il lavoro vero non è stato pubblicare pagine, ma decidere la tassonomia: capire quali categorie reggono davvero il patrimonio museale di una città stratificata come Palermo, dove lo stesso edificio può essere casa museo, sito archeologico e galleria insieme.</p>
+        <p class="en">The real work was not publishing pages but choosing the taxonomy: working out which categories actually hold a city as layered as Palermo, where a single building can be a house museum, an archaeological site and a gallery at once.</p>
+
+        <p class="note it">Progetto d'esame realizzato nel 2025. È rimasto online ma non viene più aggiornato: le informazioni di servizio dei musei vanno verificate alla fonte.</p>
+        <p class="note en">A 2025 coursework project. It is still online but no longer maintained: practical visitor information should be checked at the source.</p>
+
+        <div class="p-links">
+          <a href="https://imuseidipalermo.wordpress.com/" target="_blank" rel="noopener"><span class="it">Visita il sito →</span><span class="en">Visit the site →</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---- Guardiani di Palermo ---- -->
+    <article class="project">
+      <img class="p-cover" src="assets/img/gp-1-copertina.jpg" alt="I Guardiani di Palermo — copertina">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-concept"><span class="it">Concept · mai realizzato</span><span class="en">Concept · never produced</span></span>
+        </div>
+        <h3>I Guardiani di Palermo</h3>
+        <p class="p-meta it">Gioco da tavolo cooperativo sul patrimonio storico · progetto universitario, 2025</p>
+        <p class="p-meta en">Cooperative board game on urban heritage · university project, 2025</p>
+
+        <p class="it">Da due a cinque giocatori, dai 10 ai 14 anni, quarantacinque minuti. Cinque figure della cultura — <strong>Archivista, Restauratrice, Archeologo, Cartografo, Ricercatrice</strong> — attraversano quattro zone storiche di Palermo per riparare gli Strappi Temporali che minacciano la memoria della città.</p>
+        <p class="en">Two to five players, ages 10–14, forty-five minutes. Five cultural professionals — <strong>Archivist, Restorer, Archaeologist, Cartographer, Researcher</strong> — move across four historical districts of Palermo to repair the Temporal Rifts threatening the city's memory.</p>
+
+        <div class="shots">
+          <figure>
+            <img src="assets/img/gp-3-carte.jpg" alt="Carte e componenti del gioco">
+            <figcaption class="it">Carte Nemico, Evento, Oggetto e Conoscenza, con i mazzi delle quattro epoche.</figcaption>
+            <figcaption class="en">Enemy, Event, Item and Knowledge cards, with the four period decks.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/gp-4-turno.jpg" alt="Esempio di turno di gioco">
+            <figcaption class="it">Un turno: spostamento, pesca, combattimento a dado, ricompensa.</figcaption>
+            <figcaption class="en">One turn: movement, draw, dice combat, reward.</figcaption>
+          </figure>
+        </div>
+
+        <div class="callout">
+          <span class="lab it">Il problema di design e come l'ho risolto</span>
+          <span class="lab en">The design problem and how I solved it</span>
+          <p class="it">In un gioco cooperativo con progressione a livelli, chi tira bene nei primi turni diventa presto l'unico che conta e gli altri guardano. Ho introdotto il <strong>Riordino della Linea Temporale</strong>: quando un giocatore accumula troppo vantaggio, livelli e oggetti vengono ribilanciati tra tutti. La meccanica nasce da un vincolo educativo — se il gioco deve insegnare responsabilità collettiva, non può produrre un protagonista e quattro spettatori.</p>
+          <p class="en">In a cooperative game with level progression, whoever rolls well early becomes the only one who matters and the others watch. I introduced the <strong>Timeline Reordering</strong> rule: when one player pulls too far ahead, levels and items are rebalanced across the group. The mechanic comes straight from an educational constraint — if the game is meant to teach collective responsibility, it cannot produce one protagonist and four spectators.</p>
+        </div>
+
+        <p class="it">Le <strong>Carte Conoscenza</strong> sono la ricompensa del combattimento e insieme il veicolo dei contenuti storici: vincere uno scontro nella zona barocca significa ricevere una scheda sulla Cappella Palatina che dà anche un vantaggio di gioco in quella zona. Il contenuto non interrompe il gioco, lo premia.</p>
+        <p class="en">The <strong>Knowledge Cards</strong> are both the reward for combat and the vehicle for historical content: winning a fight in the Baroque district earns a card on the Palatine Chapel that also grants an advantage there. Content does not interrupt play, it rewards it.</p>
+
+        <p class="note it">Progetto di design completo — meccaniche, bilanciamento, componenti, illustrazioni — mai portato in produzione e attualmente non in sviluppo.</p>
+        <p class="note en">A complete design project — mechanics, balancing, components, artwork — never produced and not currently in development.</p>
+      </div>
+    </article>
+
+    <!-- ---- MiBACT ---- -->
+    <article class="project">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-accad"><span class="it">Progetto accademico</span><span class="en">Academic project</span></span>
+        </div>
+        <h3><span class="it">Il patrimonio culturale in cifre</span><span class="en">Italian cultural heritage in numbers</span></h3>
+        <p class="p-meta it">Analisi dei dati aperti del Ministero della Cultura · Python, pandas, seaborn, scipy</p>
+        <p class="p-meta en">Analysis of Italian Ministry of Culture open data · Python, pandas, seaborn, scipy</p>
+
+        <p class="it">La domanda di partenza: <strong>avere più visitatori significa davvero generare più valore economico?</strong> Ho integrato quattro tabelle di dati ministeriali sui musei, monumenti e aree archeologiche statali dal 1996 al 2018.</p>
+        <p class="en">The starting question: <strong>does attracting more visitors really generate more economic value?</strong> I integrated four ministerial datasets covering Italian state museums, monuments and archaeological sites from 1996 to 2018.</p>
+
+        <div class="callout">
+          <span class="lab it">Il risultato</span>
+          <span class="lab en">The finding</span>
+          <p class="it">No. I <strong>monumenti attirano circa il doppio dei visitatori dei musei</strong> — 2,07 contro 1,08 milioni al mese in media — ma incassano praticamente la stessa cifra: 4,99 contro 4,96 milioni di euro. La causa emerge dalla matrice di correlazione: fra visitatori totali e visitatori <em>non paganti</em> c'è un coefficiente di 0,95. La massa che affolla i monumenti è in larga parte pubblico gratuito. Il t-test conferma che la differenza fra le medie non è casuale (p ≈ 1,2 × 10⁻¹²).</p>
+          <p class="en">No. <strong>Monuments draw roughly twice the visitors museums do</strong> — 2.07 against 1.08 million per month on average — yet take almost identical revenue: €4.99m against €4.96m. The correlation matrix shows why: total visitors and <em>non-paying</em> visitors correlate at 0.95. The crowd filling monuments is largely free admission. A t-test confirms the difference between means is not chance (p ≈ 1.2 × 10⁻¹²).</p>
+        </div>
+
+        <div class="shots">
+          <figure>
+            <img src="assets/img/mb-1-scatter.png" alt="Scatter plot visitatori/incassi">
+            <figcaption class="it">Musei ripidi, monumenti piatti: ogni visitatore in più vale molto di più al museo.</figcaption>
+            <figcaption class="en">Museums steep, monuments flat: each extra visitor is worth far more in a museum.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/mb-2-bar.png" alt="Composizione dei visitatori paganti e gratuiti">
+            <figcaption class="it">La composizione del pubblico: paganti contro gratuiti.</figcaption>
+            <figcaption class="en">Audience composition: paying against free admissions.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/mb-3-timeseries.png" alt="Serie temporale con media mobile">
+            <figcaption class="it">Media mobile a 12 mesi per separare il trend dalla stagionalità.</figcaption>
+            <figcaption class="en">A 12-month moving average separating trend from seasonality.</figcaption>
+          </figure>
+        </div>
+
+        <p class="it">Percorso completo: integrazione delle fonti, pulizia e conversione delle date, analisi esplorativa, cinque visualizzazioni, correlazione di Pearson, test inferenziale e analisi delle serie temporali con media mobile a dodici mesi.</p>
+        <p class="en">Full pipeline: source integration, cleaning and date conversion, exploratory analysis, five visualisations, Pearson correlation, inferential testing and time-series analysis with a twelve-month moving average.</p>
+      </div>
+    </article>
+
+    <!-- ---- NLP ---- -->
+    <article class="project">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-accad"><span class="it">Progetto accademico</span><span class="en">Academic project</span></span>
+        </div>
+        <h3><span class="it">Classificare la voce dei giornali</span><span class="en">Classifying newspaper voice</span></h3>
+        <p class="p-meta it">NLP e valutazione di modelli linguistici · spaCy, Hugging Face, Gemma, scikit-learn</p>
+        <p class="p-meta en">NLP and language-model evaluation · spaCy, Hugging Face, Gemma, scikit-learn</p>
+
+        <p class="it">Duecento titoli del corpus <em>change-it</em>, presi da due quotidiani italiani. Prima un'analisi linguistica completa con spaCy — frasi, token, lemmi, categorie grammaticali, entità nominate per testata — poi il compito vero: far riconoscere la testata a un modello linguistico solo dal titolo.</p>
+        <p class="en">Two hundred headlines from the <em>change-it</em> corpus, drawn from two Italian newspapers. First a full linguistic analysis with spaCy — sentences, tokens, lemmas, part-of-speech, named entities per outlet — then the real task: getting a language model to identify the newspaper from the headline alone.</p>
+
+        <div class="callout">
+          <span class="lab it">La parte che conta davvero</span>
+          <span class="lab en">The part that actually matters</span>
+          <p class="it">Non far girare il modello, ma metterlo alla prova. Ho confrontato <strong>few-shot e zero-shot</strong>, ho rifatto il few-shot <strong>scambiando le etichette</strong> negli esempi, e ho eseguito una versione zero-shot <strong>randomizzando l'ordine delle due opzioni nel prompt</strong> per verificare se il modello fosse sensibile alla posizione. Il tutto confrontato con una baseline casuale, con matrice di confusione, classificazione delle risposte ambigue e lettura manuale dei titoli sbagliati per capire <em>perché</em> sbagliasse.</p>
+          <p class="en">Not running the model, but stress-testing it. I compared <strong>few-shot and zero-shot</strong> prompting, re-ran few-shot with the <strong>labels swapped</strong> in the examples, and ran a zero-shot version <strong>randomising the order of the two options</strong> in the prompt to check for positional bias. All against a random baseline, with a confusion matrix, an explicit class for ambiguous outputs, and manual reading of the misclassified headlines to understand <em>why</em> it failed.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---- Emozioni per Capirsi ---- -->
+    <article class="project">
+      <img class="p-cover" src="assets/img/em-1-rabbia.jpg" alt="Emozioni per Capirsi — la doppia pagina sulla rabbia">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-concept"><span class="it">Concept · progetto di gruppo</span><span class="en">Concept · team project</span></span>
+        </div>
+        <h3>Emozioni per Capirsi</h3>
+        <p class="p-meta it">Collana editoriale per l'inclusione dei bambini stranieri · progetto universitario, 2025</p>
+        <p class="p-meta en">Book series for the inclusion of foreign children · university project, 2025</p>
+
+        <p class="it">Una collana illustrata che aiuta i bambini stranieri nella scuola primaria italiana a riconoscere e nominare le proprie emozioni. Ogni doppia pagina presenta un'emozione in <strong>sette lingue</strong> — italiano, inglese, cinese, francese, arabo, albanese, ucraino — con una storia breve, un QR per l'ascolto, un esercizio di respirazione e uno spazio bianco dove il bambino disegna il colore della propria rabbia.</p>
+        <p class="en">An illustrated series helping foreign children in Italian primary schools recognise and name their emotions. Each spread presents one emotion in <strong>seven languages</strong> — Italian, English, Chinese, French, Arabic, Albanian, Ukrainian — with a short story, a QR code for audio, a breathing exercise, and a blank space where the child draws the colour of their own anger.</p>
+
+        <p class="it">Oltre ai contenuti, il progetto comprende un <strong>Business Model Canvas</strong> completo e un workflow editoriale che mappa ogni fase su figure professionali, competenze, strumenti e punti di attenzione — dalla definizione della visione fino a proof-reading, typesetting e distribuzione.</p>
+        <p class="en">Beyond the content, the project includes a full <strong>Business Model Canvas</strong> and an editorial workflow mapping every phase onto roles, skills, tools and risk points — from defining the vision through proof-reading, typesetting and distribution.</p>
+
+        <p class="note it">Progetto di gruppo realizzato in quattro persone. Il mio ruolo: coordinamento della fase di finalizing, publishing e post-producing. Concept mai portato in produzione.</p>
+        <p class="note en">A four-person team project. My role: leading the finalizing, publishing and post-producing stage. The concept was never taken into production.</p>
+      </div>
+    </article>
+
+    <!-- ---- Museologia ---- -->
+    <article class="project">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-concept"><span class="it">Concept · mai realizzato</span><span class="en">Concept · never built</span></span>
+        </div>
+        <h3><span class="it">Vita al tempo dei dinosauri</span><span class="en">Life in the age of dinosaurs</span></h3>
+        <p class="p-meta it">Percorso in realtà aumentata al Museo Geologico Gemmellaro · progetto universitario, 2025</p>
+        <p class="p-meta en">Augmented reality trail at the Gemmellaro Geological Museum · university project, 2025</p>
+
+        <p class="it">Uno studio di fattibilità per restituire ai fossili del Paleozoico e Mesozoico l'ambiente in cui vivevano. Il visitatore inquadra un codice accanto alla teca e vede la ricostruzione tridimensionale animata, con contenuti audio e testuali e un percorso gamificato pensato per scolaresche e famiglie. Riferimenti di metodo: l'Oertijdmuseum di Boxtel e il MUSE di Trento.</p>
+        <p class="en">A feasibility study returning Palaeozoic and Mesozoic fossils to the environment they lived in. The visitor scans a code beside the display case and sees an animated 3D reconstruction, with audio and text layers and a gamified trail designed for school groups and families. Method references: the Oertijdmuseum in Boxtel and MUSE in Trento.</p>
+
+        <p class="note it">Sottoposto informalmente alla direzione del Museo Gemmellaro, che lo ha accolto come proposta teoricamente realizzabile, in linea con iniziative multimediali già sperimentate. Nessuna fase di implementazione è prevista.</p>
+        <p class="note en">Informally presented to the Gemmellaro Museum's management, who received it as a theoretically feasible proposal consistent with multimedia initiatives already trialled there. No implementation is planned.</p>
+      </div>
+    </article>
+
+    <!-- ---- Percettrone ---- -->
+    <article class="project">
+      <div class="p-body">
+        <div class="p-top">
+          <span class="badge b-accad"><span class="it">Esercitazione didattica</span><span class="en">Teaching exercise</span></span>
+        </div>
+        <h3><span class="it">Percettrone Archeologo</span><span class="en">The Archaeologist Perceptron</span></h3>
+        <p class="p-meta it">Machine learning da zero · Python, nessuna libreria esterna</p>
+        <p class="p-meta en">Machine learning from scratch · Python, no external libraries</p>
+
+        <p class="it">Un percettrone scritto interamente a mano — funzione sigmoide, derivata, retropropagazione dell'errore — che distingue anfore da piatti a partire da altezza e diametro. Il dataset è sintetico e minuscolo, dieci reperti inventati: il punto dell'esercizio non era il risultato, ma implementare la matematica senza appoggiarsi a scikit-learn, per capire cosa succede sotto il cofano di una libreria.</p>
+        <p class="en">A perceptron written entirely by hand — sigmoid, derivative, backpropagation — that tells amphorae from plates using height and diameter. The dataset is synthetic and tiny, ten invented artefacts: the point was never the result, but implementing the mathematics without scikit-learn, to see what happens under a library's hood.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ TESI ============ -->
+<section id="tesi">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="it">Tesi di laurea magistrale</span><span class="en">Master's thesis</span></h2>
+    </div>
+    <div class="narrow">
+      <h3 style="font-size:clamp(20px,2.6vw,25px);margin-bottom:10px">
+        <span class="it">Dal game-design alla valutazione didattica</span>
+        <span class="en">From game design to educational evaluation</span>
+      </h3>
+      <p class="p-meta it">Il caso <em>Custodi del Flascio</em> come serious game per l'educazione ambientale · relatore prof. Giuseppe Città · Università di Palermo, A.A. 2025/2026</p>
+      <p class="p-meta en"><em>Custodi del Flascio</em> as a serious game for environmental education · supervisor prof. Giuseppe Città · University of Palermo, 2025/26</p>
+
+      <p class="it">L'educazione ambientale ha un problema documentato: le conoscenze si trasmettono con relativa facilità, ma il passaggio dalla conoscenza al comportamento non è automatico. La letteratura lo chiama <strong>divario tra consapevolezza e azione</strong>. La tesi parte da lì e si chiede se un ambiente digitale che costringa un bambino a decidere davvero — con risorse insufficienti e conseguenze visibili — possa avvicinare ciò che sa a ciò che fa.</p>
+      <p class="en">Environmental education has a documented problem: knowledge transfers fairly easily, but the step from knowing to doing does not follow. The literature calls it the <strong>awareness–action gap</strong>. The thesis starts there and asks whether a digital environment that forces a child to genuinely decide — with insufficient resources and visible consequences — can bring what they know closer to what they do.</p>
+
+      <p class="it">Sei capitoli: il quadro teorico su game-based learning e decision-making; l'analisi comparativa di <strong>otto framework di progettazione</strong>, da cui deriva la scelta del modello <strong>LM-GM</strong> di Arnab e colleghi; la progettazione del prototipo con la mappatura fra meccaniche di apprendimento e meccaniche di gioco; il disegno della ricerca; i risultati; la discussione.</p>
+      <p class="en">Six chapters: the theoretical frame on game-based learning and decision-making; a comparative analysis of <strong>eight design frameworks</strong>, leading to the choice of the <strong>LM-GM</strong> model by Arnab et al.; the prototype's design with its learning-mechanics to game-mechanics mapping; the research design; the results; the discussion.</p>
+
+      <div class="callout">
+        <span class="lab it">Il metodo</span>
+        <span class="lab en">The method</span>
+        <p class="it">Una <strong>valutazione esperta ex ante</strong> con tre docenti di scuola primaria, campione anonimizzato con consenso informato: non vengono riportati dati anagrafici, di genere o di anzianità di servizio, che in un campione così ridotto permetterebbero un'identificazione indiretta. Protocollo incrementale in tre fasi: una sessione formativa plenaria online, poi il gioco in autonomia, infine un'intervista semi-strutturata. L'analisi combina uno schema di codifica deduttivo a dieci categorie con una componente induttiva, una matrice comparativa e l'esame dei casi devianti.</p>
+        <p class="en">An <strong>ex-ante expert evaluation</strong> with three primary-school teachers, anonymised with informed consent: no demographic, gender or seniority data is reported, since in a sample this small it would allow indirect identification. A three-stage incremental protocol: a plenary online training session, then independent play, finally a semi-structured interview. The analysis combines a ten-category deductive coding scheme with an inductive component, a comparative matrix and deviant-case examination.</p>
+      </div>
+
+      <p class="it"><strong>I risultati.</strong> Tutti e tre i partecipanti dichiarano l'intenzione di usare il prototipo e la disponibilità a raccomandarlo, motivandolo ciascuno con una caratteristica precisa dell'esperienza e non con un apprezzamento generico. Il decision-making è la componente più densamente documentata del corpus; la comprensione delle relazioni sistemiche è riconosciuta da tutti e tre, sempre per la stessa ragione: il gioco rende visibili le conseguenze.</p>
+      <p class="en"><strong>The results.</strong> All three participants stated an intention to use the prototype and a willingness to recommend it, each grounding that in a specific feature of the experience rather than generic approval. Decision-making is the most densely documented component of the corpus; systemic understanding is recognised by all three, always for the same reason: the game makes consequences visible.</p>
+
+      <p class="it"><strong>E ciò che non è risultato.</strong> Il passaggio dalla conoscenza ambientale al comportamento fuori dal gioco è esplicito in un solo caso su tre. La gestione delle emergenze — struttura a turni, pressione temporale, decisione a informazione incompleta — non compare affatto nel corpus, e il limite è della mia traccia d'intervista, che non la sollecitava con una domanda dedicata, prima ancora che delle risposte. Il lavoro documenta l'adottabilità percepita e il potenziale attribuito dalle docenti, <em>non</em> l'efficacia sull'apprendimento: quella richiederebbe una sperimentazione in classe.</p>
+      <p class="en"><strong>And what did not emerge.</strong> The step from environmental knowledge to behaviour outside the game is explicit in only one of the three cases. Emergency management — turn structure, time pressure, deciding under incomplete information — does not appear in the corpus at all, and that gap belongs to my interview protocol, which had no dedicated question for it, before it belongs to the answers. The study documents perceived adoptability and attributed potential, <em>not</em> learning effectiveness: that would require classroom trials.</p>
+
+      <p class="note it">Discussione prevista per ottobre 2026. Il testo integrale sarà disponibile dopo la discussione.</p>
+      <p class="note en">Defence scheduled for October 2026. The full text will be available after the defence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESPERIENZA ============ -->
+<section id="esperienza">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="it">Esperienza</span><span class="en">Experience</span></h2>
+    </div>
+
+    <div class="job">
+      <h3>ARPA Sicilia</h3>
+      <p class="role"><span class="it">Serious game designer & developer — tirocinio curricolare</span><span class="en">Serious game designer & developer — university internship</span></p>
+      <p class="when"><span class="it">gennaio – aprile 2026 · 300 ore · Palermo</span><span class="en">January – April 2026 · 300 hours · Palermo</span></p>
+      <p class="it">Progettazione e sviluppo di esperienze interattive per la sensibilizzazione ambientale, unendo le metodologie delle Digital Humanities al rigore scientifico dell'Agenzia regionale per la protezione dell'ambiente.</p>
+      <p class="en">Design and development of interactive experiences for environmental awareness, combining Digital Humanities methods with the scientific rigour of the regional environmental protection agency.</p>
+
+      <ol class="tl">
+        <li><time><span class="it">gennaio</span><span class="en">January</span></time>
+          <p class="it">Stato dell'arte dei serious game a tema ecologico e scouting delle soluzioni già esistenti nel settore.</p>
+          <p class="en">State of the art in ecological serious games and scouting of existing solutions in the field.</p></li>
+        <li><time><span class="it">gennaio – febbraio</span><span class="en">January – February</span></time>
+          <p class="it">Raccolta dati sugli habitat di Parco dei Nebrodi, Bosco del Flascio e Plemmirio; analisi del portale Orbs Regione Sicilia per allineare le proposte agli obiettivi di divulgazione dell'ente.</p>
+          <p class="en">Data gathering on the habitats of the Nebrodi Park, Bosco del Flascio and Plemmirio; analysis of the Orbs Regione Sicilia portal to align proposals with the agency's outreach goals.</p></li>
+        <li><time><span class="it">fine gennaio</span><span class="en">late January</span></time>
+          <p class="it">Stesura del Game Design Document e valutazione degli ambienti di sviluppo: Twine per le strutture narrative a bivi, GDevelop per il prototipo giocabile.</p>
+          <p class="en">Writing the Game Design Document and evaluating development environments: Twine for branching narrative, GDevelop for the playable prototype.</p></li>
+        <li><time><span class="it">marzo</span><span class="en">March</span></time>
+          <p class="it">Prototipi giocabili per Nebrodi e Flascio, playtest interno con analisi dei risultati e bilanciamento delle meccaniche.</p>
+          <p class="en">Playable prototypes for Nebrodi and Flascio, internal playtest with analysis of results and mechanics balancing.</p></li>
+        <li><time><span class="it">marzo</span><span class="en">March</span></time>
+          <p class="it">Implementazione della telemetria di gioco per l'analisi quantitativa dell'interazione degli utenti.</p>
+          <p class="en">Implementation of in-game telemetry for quantitative analysis of user interaction.</p></li>
+        <li><time><span class="it">aprile</span><span class="en">April</span></time>
+          <p class="it">Documentazione tecnica finale, sistematizzazione dei dati raccolti, bibliografia e revisione conclusiva del GDD.</p>
+          <p class="en">Final technical documentation, systematisation of collected data, bibliography and closing revision of the GDD.</p></li>
+      </ol>
+      <p class="note it" style="margin-top:14px">La telemetria è stata poi rimossa dalla versione pubblica del gioco e lasciata predisposta nel codice: il prototipo è usato con bambini e la raccolta dati non era necessaria alla sperimentazione condotta.</p>
+      <p class="note en" style="margin-top:14px">Telemetry was later removed from the public build and left scaffolded in the code: the prototype is used with children and data collection was not needed for the study carried out.</p>
+    </div>
+
+    <div class="job">
+      <h3>iCrewPlay</h3>
+      <p class="role"><span class="it">Redattore e grafico</span><span class="en">Staff writer and graphic designer</span></p>
+      <p class="when"><span class="it">marzo – dicembre 2021 · Palermo</span><span class="en">March – December 2021 · Palermo</span></p>
+      <p class="it">Redazione di notizie, rubriche, approfondimenti e guide in ambito videoludico, con produzione grafica a supporto della redazione.</p>
+      <p class="en">News, columns, feature articles and guides on video games, plus graphic production supporting the editorial team.</p>
+      <div class="p-links">
+        <a href="https://www.icrewplay.com/author/aletoro24/" target="_blank" rel="noopener"><span class="it">Profilo autore →</span><span class="en">Author profile →</span></a>
+      </div>
+    </div>
+
+    <div class="job">
+      <h3>Fondazione Sant'Elia</h3>
+      <p class="role"><span class="it">Accoglienza e custodia museale — tirocinio</span><span class="en">Museum reception and invigilation — internship</span></p>
+      <p class="when"><span class="it">luglio 2021 · Palazzo Sant'Elia, Palermo</span><span class="en">July 2021 · Palazzo Sant'Elia, Palermo</span></p>
+      <p class="it">Gestione dei flussi di visitatori, monitoraggio delle sale espositive e della strumentazione multimediale a supporto delle mostre, accoglienza di ospiti istituzionali.</p>
+      <p class="en">Visitor flow management, monitoring of exhibition rooms and of the multimedia equipment supporting the shows, reception of institutional guests.</p>
+    </div>
+
+    <div class="job">
+      <h3>The Shield of Wrestling</h3>
+      <p class="role"><span class="it">Reporter live</span><span class="en">Live reporter</span></p>
+      <p class="when"><span class="it">dicembre 2020 – giugno 2021</span><span class="en">December 2020 – June 2021</span></p>
+      <p class="it">94 articoli in sette mesi: report in diretta di eventi sportivi, scritti e pubblicati a ridosso della messa in onda, con cadenza settimanale fissa.</p>
+      <p class="en">94 articles in seven months: live reports on sports events, written and published as they aired, on a fixed weekly schedule.</p>
+      <div class="p-links">
+        <a href="https://www.theshieldofwrestling.com/autore/alessandro-riina/" target="_blank" rel="noopener"><span class="it">Profilo autore →</span><span class="en">Author profile →</span></a>
+      </div>
+    </div>
+
+    <div class="job">
+      <h3>La Toscana IJS</h3>
+      <p class="role"><span class="it">Assistant store manager</span><span class="en">Assistant store manager</span></p>
+      <p class="when"><span class="it">luglio – ottobre 2023 · Paesi Bassi</span><span class="en">July – October 2023 · Netherlands</span></p>
+      <p class="it">Coordinamento del personale e gestione operativa di tre punti vendita a Schijndel, Son en Breugel e Best.</p>
+      <p class="en">Staff coordination and day-to-day management of three shops in Schijndel, Son en Breugel and Best.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPETENZE ============ -->
+<section id="competenze">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="it">Competenze</span><span class="en">Skills</span></h2>
+      <p class="it">Ogni voce rimanda a un progetto in cui l'ho effettivamente usata.</p>
+      <p class="en">Each item points to a project where I actually used it.</p>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <h3><span class="it">Game design</span><span class="en">Game design</span></h3>
+        <ul>
+          <li><span class="it">Progettazione di serious game con framework LM-GM</span><span class="en">Serious game design with the LM-GM framework</span> <em>— Custodi del Flascio</em></li>
+          <li><span class="it">Game Design Document e bilanciamento delle meccaniche</span><span class="en">Game Design Documents and mechanics balancing</span> <em>— ARPA Sicilia</em></li>
+          <li><span class="it">Design di giochi da tavolo cooperativi</span><span class="en">Cooperative board game design</span> <em>— I Guardiani di Palermo</em></li>
+          <li>Twine, GDevelop</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3><span class="it">Ricerca e valutazione</span><span class="en">Research and evaluation</span></h3>
+        <ul>
+          <li><span class="it">Valutazione esperta ex ante e interviste semi-strutturate</span><span class="en">Ex-ante expert evaluation and semi-structured interviews</span> <em>— tesi</em></li>
+          <li><span class="it">Schemi di codifica deduttivi e induttivi, analisi dei casi devianti</span><span class="en">Deductive and inductive coding schemes, deviant-case analysis</span></li>
+          <li><span class="it">Playtest e analisi dei risultati</span><span class="en">Playtesting and results analysis</span> <em>— ARPA Sicilia</em></li>
+          <li><span class="it">Gestione bibliografica con Zotero</span><span class="en">Reference management with Zotero</span></li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3><span class="it">Dati e linguaggio</span><span class="en">Data and language</span></h3>
+        <ul>
+          <li>Python — pandas, seaborn, matplotlib, scipy <em>— <span class="it">analisi MiBACT</span><span class="en">MiBACT analysis</span></em></li>
+          <li>spaCy, Hugging Face, transformers, NLTK <em>— <span class="it">progetto NLP</span><span class="en">NLP project</span></em></li>
+          <li><span class="it">Prompting e valutazione di LLM: few-shot, zero-shot, test di bias</span><span class="en">LLM prompting and evaluation: few-shot, zero-shot, bias testing</span></li>
+          <li><span class="it">Dati culturali aperti</span><span class="en">Cultural open data</span></li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3><span class="it">Sviluppo e web</span><span class="en">Development and web</span></h3>
+        <ul>
+          <li>React, Next.js, TypeScript, Tailwind CSS <em>— Custodi del Flascio</em></li>
+          <li>HTML, CSS, Git, GitHub, Vercel</li>
+          <li>WordPress <em>— iMuseiDiPalermo</em></li>
+          <li><span class="it">Design responsive e mobile-first</span><span class="en">Responsive, mobile-first design</span></li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3><span class="it">Editoria e contenuti</span><span class="en">Publishing and content</span></h3>
+        <ul>
+          <li><span class="it">Progettazione di collane editoriali e workflow redazionali</span><span class="en">Book series design and editorial workflows</span> <em>— Emozioni per Capirsi</em></li>
+          <li><span class="it">Scrittura giornalistica sotto scadenza</span><span class="en">Journalism under deadline</span> <em>— iCrewPlay, The Shield of Wrestling</em></li>
+          <li>Business Model Canvas</li>
+          <li>GIMP, Canva, Photoshop</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3><span class="it">Formazione e lingue</span><span class="en">Education and languages</span></h3>
+        <ul>
+          <li><span class="it">Laurea magistrale in Digital Humanities per l'industria culturale (LM-43), Università di Palermo — in corso, ottobre 2026</span><span class="en">MA in Digital Humanities for the Cultural Industry (LM-43), University of Palermo — expected October 2026</span></li>
+          <li><span class="it">Laurea triennale in Beni Culturali (L-1), Università di Palermo</span><span class="en">BA in Cultural Heritage (L-1), University of Palermo</span></li>
+          <li><span class="it">Italiano madrelingua · Inglese B2</span><span class="en">Italian native · English B2</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATTI ============ -->
+<section id="contatti" class="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2><span class="it">Contatti</span><span class="en">Contact</span></h2>
+      <p class="it">Sono interessato a ruoli in progettazione di esperienze educative digitali, valorizzazione del patrimonio culturale e analisi di dati culturali. Scrivetemi volentieri.</p>
+      <p class="en">I'm interested in roles in digital learning experience design, cultural heritage, and cultural data analysis. Do get in touch.</p>
+    </div>
+    <div class="contact-list">
+      <a href="mailto:alessandroriina1998@gmail.com">alessandroriina1998@gmail.com</a>
+      <a href="https://www.linkedin.com/in/alessandro-riina-58a2b42bb" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Aletoro98" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="it">© 2026 Alessandro Riina · Palermo, Sicilia</p>
+    <p class="en">© 2026 Alessandro Riina · Palermo, Sicily</p>
+    <p class="it">Immagini dei progetti: illustrazioni e schermate dei lavori descritti. Le fotografie delle specie in <em>Custodi del Flascio</em> appartengono ai rispettivi autori, con licenze indicate nel repository.</p>
+    <p class="en">Project images: illustrations and screenshots of the work described. Species photographs in <em>Custodi del Flascio</em> belong to their respective authors, with licences credited in the repository.</p>
+  </div>
+</footer>
+
+</main>
+
+<!-- visualizzatore a schermo intero -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" type="button" aria-label="Chiudi">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="Precedente">‹</button>
+  <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="Successiva">›</button>
+  <figure class="lb-figure" id="lbFig">
+    <div class="lb-scroll" id="lbScroll"><img id="lbImg" alt=""></div>
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
