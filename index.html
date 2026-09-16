@@ -13,6 +13,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Dati strutturati: servono ai motori di ricerca e ai sistemi automatici
+     per capire chi sono e cosa faccio, senza doverlo dedurre dal testo. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alessandro Riina",
+  "url": "https://aletoro98.github.io",
+  "email": "mailto:alessandroriina1998@gmail.com",
+  "jobTitle": "Digital Humanities — serious game design e valutazione didattica",
+  "description": "Progetto e valuto esperienze digitali per l'educazione e il patrimonio culturale: serious game, dati culturali aperti, elaborazione del linguaggio naturale.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Palermo", "addressCountry": "IT" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Università degli Studi di Palermo" },
+  "knowsLanguage": ["it", "en"],
+  "sameAs": [
+    "https://github.com/Aletoro98",
+    "https://www.linkedin.com/in/alessandro-riina-58a2b42bb"
+  ],
+  "knowsAbout": [
+    "Digital Humanities", "Serious games", "Game design", "Game-based learning",
+    "Instructional design", "Valutazione didattica", "Ricerca qualitativa",
+    "Patrimonio culturale", "Museologia digitale", "Realtà aumentata",
+    "Python", "pandas", "Analisi dati", "Natural Language Processing", "spaCy",
+    "React", "Next.js", "TypeScript", "WordPress", "Educazione ambientale"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -64,12 +92,68 @@
   <div class="wrap">
     <div class="sec-head">
       <h2><span class="it">Progetti</span><span class="en">Projects</span></h2>
-      <p class="it">Ogni scheda dichiara il proprio stato: <strong>realizzato</strong> se è stato costruito davvero ed è consultabile, <strong>concept</strong> se è rimasto un progetto su carta, <strong>accademico</strong> se è un lavoro d'esame. Un solo progetto è oggi attivo e mantenuto.</p>
-      <p class="en">Each entry states what it actually is: <strong>built</strong> if it exists and can be opened, <strong>concept</strong> if it never left the page, <strong>academic</strong> if it was coursework. Only one project is currently live and maintained.</p>
+      <p class="it">Sono nati quasi tutti all'università, e ogni scheda lo dice. Quello che cambia è cosa esiste davvero: <strong>online</strong> se lo potete aprire adesso, <strong>concept</strong> se è un progetto compiuto ma mai messo in produzione. Un solo progetto è oggi attivo e mantenuto.</p>
+      <p class="en">Nearly all of these began at university, and each entry says so. What differs is what actually exists: <strong>live</strong> if you can open it right now, <strong>concept</strong> if the design is complete but was never produced. Only one project is currently active and maintained.</p>
     </div>
 
+    <!-- indice: per scegliere cosa leggere invece di scorrere tutto -->
+    <nav class="index" aria-label="Elenco dei progetti">
+      <a href="#p-custodi">
+        <span class="i-name">Custodi del Flascio</span>
+        <span class="i-desc it">Serious game sulla biodiversità, giocabile online</span>
+        <span class="i-desc en">Serious game on biodiversity, playable online</span>
+        <span class="badge b-live"><span class="it">Online</span><span class="en">Live</span></span>
+      </a>
+      <a href="#p-musei">
+        <span class="i-name">iMuseiDiPalermo</span>
+        <span class="i-desc it">Portale sui musei della città</span>
+        <span class="i-desc en">A guide to the city's museums</span>
+        <span class="badge b-live"><span class="it">Online</span><span class="en">Live</span></span>
+      </a>
+      <a href="#p-guardiani">
+        <span class="i-name">I Guardiani di Palermo</span>
+        <span class="i-desc it">Gioco da tavolo cooperativo sul patrimonio storico</span>
+        <span class="i-desc en">Cooperative board game on urban heritage</span>
+        <span class="badge b-concept">Concept</span>
+      </a>
+      <a href="#p-mibact">
+        <span class="i-name it">Il patrimonio culturale in cifre</span>
+        <span class="i-name en">Cultural heritage in numbers</span>
+        <span class="i-desc it">Analisi dei dati aperti del Ministero della Cultura</span>
+        <span class="i-desc en">Analysis of Ministry of Culture open data</span>
+        <span class="badge b-accad"><span class="it">Analisi dati</span><span class="en">Data analysis</span></span>
+      </a>
+      <a href="#p-nlp">
+        <span class="i-name it">Classificare la voce dei giornali</span>
+        <span class="i-name en">Classifying newspaper voice</span>
+        <span class="i-desc it">NLP e valutazione di modelli linguistici</span>
+        <span class="i-desc en">NLP and language-model evaluation</span>
+        <span class="badge b-accad">NLP</span>
+      </a>
+      <a href="#p-emozioni">
+        <span class="i-name">Emozioni per Capirsi</span>
+        <span class="i-desc it">Collana editoriale multilingue per l'inclusione</span>
+        <span class="i-desc en">Multilingual book series for inclusion</span>
+        <span class="badge b-concept">Concept</span>
+      </a>
+      <a href="#p-museologia">
+        <span class="i-name it">Vita al tempo dei dinosauri</span>
+        <span class="i-name en">Life in the age of dinosaurs</span>
+        <span class="i-desc it">Realtà aumentata al Museo Gemmellaro</span>
+        <span class="i-desc en">Augmented reality at the Gemmellaro Museum</span>
+        <span class="badge b-concept">Concept</span>
+      </a>
+      <a href="#p-percettrone">
+        <span class="i-name it">Percettrone Archeologo</span>
+        <span class="i-name en">The Archaeologist Perceptron</span>
+        <span class="i-desc it">Machine learning scritto da zero, senza librerie</span>
+        <span class="i-desc en">Machine learning from scratch, no libraries</span>
+        <span class="badge b-accad"><span class="it">Esercitazione</span><span class="en">Exercise</span></span>
+      </a>
+    </nav>
+
     <!-- ---- Custodi del Flascio ---- -->
-    <article class="project flagship">
+    <article id="p-custodi" class="project flagship">
       <img class="p-cover" src="assets/img/cdf-mappa-hero.jpg" alt="La mappa del Bosco del Flascio">
       <div class="p-body">
         <div class="p-top">
@@ -82,11 +166,13 @@
         <p class="it">Il giocatore è il <strong>Coordinatore</strong> del sito Natura 2000 ITA070007 «Bosco del Flascio», nel Parco dei Nebrodi. Ha sette giornate, 35.000 € di fondi pubblici e quattro specie protette dall'Unione Europea da portare vive alla fine della settimana. Ogni giorno arriva un'emergenza e ogni emergenza costringe a scegliere tra un intervento gratuito ma provvisorio e uno risolutivo ma caro.</p>
         <p class="en">The player is the <strong>Coordinator</strong> of Natura 2000 site ITA070007 "Bosco del Flascio", in the Nebrodi Park. Seven days, €35,000 of public funds, and four EU-protected species that must still be alive at the end of the week. Each day brings an emergency, and each emergency forces a choice between a free but temporary fix and a decisive but expensive one.</p>
 
-        <div class="facts">
-          <div class="fact"><b>7</b><span class="it">giornate di gioco</span><span class="en">in-game days</span></div>
-          <div class="fact"><b>4</b><span class="it">specie protette reali</span><span class="en">real protected species</span></div>
-          <div class="fact"><b>35.000 €</b><span class="it">budget da gestire</span><span class="en">budget to manage</span></div>
-          <div class="fact"><b>3</b><span class="it">docenti valutatori</span><span class="en">expert teacher reviewers</span></div>
+        <div class="callout">
+          <span class="lab it">Messo alla prova con chi dovrà usarlo</span>
+          <span class="lab en">Tested with the people who would use it</span>
+          <p class="it">Il prototipo non è rimasto sulla mia scrivania: è stato sottoposto a una <strong>valutazione esperta</strong> con tre docenti di scuola primaria, attraverso una sessione formativa, una prova di gioco in autonomia e un'intervista semi-strutturata. Tutti e tre hanno dichiarato l'intenzione di usarlo in classe e la disponibilità a raccomandarlo, ciascuno motivandolo con un aspetto preciso — la partecipazione attiva e le competenze decisionali, l'efficacia nel rendere l'apprendimento coinvolgente, la capacità di raggiungere tutti gli alunni. Nessuno ha indicato nelle dotazioni tecnologiche della scuola un ostacolo all'adozione.</p>
+          <p class="en">The prototype did not stay on my desk: it went through an <strong>expert evaluation</strong> with three primary-school teachers — a training session, independent play, and a semi-structured interview. All three stated they intended to use it in class and would recommend it, each for a specific reason: active participation and decision-making skills, effectiveness in making learning engaging, the ability to reach every pupil. None saw their school's technology as an obstacle to adoption.</p>
+          <p class="it" style="margin-top:10px;font-size:14.5px;color:var(--ink-mute)">Metodo, schema di codifica e risultati completi — <strong>limiti inclusi</strong> — sono descritti nella <a href="#tesi" style="color:var(--accent)">sezione dedicata alla tesi</a>.</p>
+          <p class="en" style="margin-top:10px;font-size:14.5px;color:var(--ink-mute)">Method, coding scheme and full findings — <strong>limitations included</strong> — are described in the <a href="#tesi" style="color:var(--accent)">thesis section</a>.</p>
         </div>
 
         <p class="it">Contenuti, specie, pressioni e misure non sono inventati: provengono dalla documentazione del sito redatta ai sensi della <strong>Direttiva Habitat 92/43/CEE</strong>. La <em>Petagnaea gussonei</em> che rischia di sparire dal quadro comandi è un relitto botanico del Terziario che cresce solo in poche zone umide dei Nebrodi.</p>
@@ -133,10 +219,10 @@
     </article>
 
     <!-- ---- iMuseiDiPalermo ---- -->
-    <article class="project">
+    <article id="p-musei" class="project">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-live"><span class="it">Realizzato · non aggiornato</span><span class="en">Built · no longer updated</span></span>
+          <span class="badge b-live"><span class="it">Progetto accademico · online</span><span class="en">Academic project · live</span></span>
         </div>
         <h3>iMuseiDiPalermo</h3>
         <p class="p-meta it">Portale divulgativo sui musei palermitani · progetto universitario, 2025 · WordPress</p>
@@ -158,11 +244,11 @@
     </article>
 
     <!-- ---- Guardiani di Palermo ---- -->
-    <article class="project">
+    <article id="p-guardiani" class="project">
       <img class="p-cover" src="assets/img/gp-1-copertina.jpg" alt="I Guardiani di Palermo — copertina">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-concept"><span class="it">Concept · mai realizzato</span><span class="en">Concept · never produced</span></span>
+          <span class="badge b-concept"><span class="it">Progetto accademico · concept</span><span class="en">Academic project · concept</span></span>
         </div>
         <h3>I Guardiani di Palermo</h3>
         <p class="p-meta it">Gioco da tavolo cooperativo sul patrimonio storico · progetto universitario, 2025</p>
@@ -200,10 +286,10 @@
     </article>
 
     <!-- ---- MiBACT ---- -->
-    <article class="project">
+    <article id="p-mibact" class="project">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-accad"><span class="it">Progetto accademico</span><span class="en">Academic project</span></span>
+          <span class="badge b-accad"><span class="it">Progetto accademico · analisi dati</span><span class="en">Academic project · data analysis</span></span>
         </div>
         <h3><span class="it">Il patrimonio culturale in cifre</span><span class="en">Italian cultural heritage in numbers</span></h3>
         <p class="p-meta it">Analisi dei dati aperti del Ministero della Cultura · Python, pandas, seaborn, scipy</p>
@@ -243,10 +329,10 @@
     </article>
 
     <!-- ---- NLP ---- -->
-    <article class="project">
+    <article id="p-nlp" class="project">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-accad"><span class="it">Progetto accademico</span><span class="en">Academic project</span></span>
+          <span class="badge b-accad"><span class="it">Progetto accademico · NLP</span><span class="en">Academic project · NLP</span></span>
         </div>
         <h3><span class="it">Classificare la voce dei giornali</span><span class="en">Classifying newspaper voice</span></h3>
         <p class="p-meta it">NLP e valutazione di modelli linguistici · spaCy, Hugging Face, Gemma, scikit-learn</p>
@@ -265,11 +351,11 @@
     </article>
 
     <!-- ---- Emozioni per Capirsi ---- -->
-    <article class="project">
+    <article id="p-emozioni" class="project">
       <img class="p-cover" src="assets/img/em-1-rabbia.jpg" alt="Emozioni per Capirsi — la doppia pagina sulla rabbia">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-concept"><span class="it">Concept · progetto di gruppo</span><span class="en">Concept · team project</span></span>
+          <span class="badge b-concept"><span class="it">Progetto accademico · concept di gruppo</span><span class="en">Academic project · team concept</span></span>
         </div>
         <h3>Emozioni per Capirsi</h3>
         <p class="p-meta it">Collana editoriale per l'inclusione dei bambini stranieri · progetto universitario, 2025</p>
@@ -287,10 +373,10 @@
     </article>
 
     <!-- ---- Museologia ---- -->
-    <article class="project">
+    <article id="p-museologia" class="project">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-concept"><span class="it">Concept · mai realizzato</span><span class="en">Concept · never built</span></span>
+          <span class="badge b-concept"><span class="it">Progetto accademico · concept</span><span class="en">Academic project · concept</span></span>
         </div>
         <h3><span class="it">Vita al tempo dei dinosauri</span><span class="en">Life in the age of dinosaurs</span></h3>
         <p class="p-meta it">Percorso in realtà aumentata al Museo Geologico Gemmellaro · progetto universitario, 2025</p>
@@ -305,10 +391,10 @@
     </article>
 
     <!-- ---- Percettrone ---- -->
-    <article class="project">
+    <article id="p-percettrone" class="project">
       <div class="p-body">
         <div class="p-top">
-          <span class="badge b-accad"><span class="it">Esercitazione didattica</span><span class="en">Teaching exercise</span></span>
+          <span class="badge b-accad"><span class="it">Progetto accademico · esercitazione</span><span class="en">Academic project · exercise</span></span>
         </div>
         <h3><span class="it">Percettrone Archeologo</span><span class="en">The Archaeologist Perceptron</span></h3>
         <p class="p-meta it">Machine learning da zero · Python, nessuna libreria esterna</p>
