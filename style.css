@@ -105,7 +105,9 @@ html[data-lang="en"] .it{display:none}
 }
 
 /* ---------- hero ---------- */
-.hero{padding:76px 0 56px}
+/* padding-block e non la scorciatoia "padding": quest'ultima azzererebbe
+   i margini laterali che .wrap imposta con padding-inline */
+.hero{padding-block:76px 56px}
 .hero-grid{display:grid;grid-template-columns:132px 1fr;gap:30px;align-items:start}
 .avatar{
   width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:center 22%;
@@ -133,13 +135,13 @@ html[data-lang="en"] .it{display:none}
 .btn-ghost:hover{background:var(--accent-soft)}
 
 @media (max-width:640px){
-  .hero{padding:48px 0 36px}
+  .hero{padding-block:48px 36px}
   .hero-grid{grid-template-columns:1fr;gap:20px}
   .avatar{width:104px;height:104px}
 }
 
 /* ---------- sezioni ---------- */
-section{padding:56px 0;border-top:1px solid var(--line)}
+section{padding-block:56px;border-top:1px solid var(--line)}
 .sec-head{margin-bottom:34px}
 .sec-head h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:10px}
 .sec-head p{color:var(--ink-mute);margin:0;max-width:var(--text);font-size:16px}
@@ -154,6 +156,25 @@ section{padding:56px 0;border-top:1px solid var(--line)}
 .b-live{background:var(--accent-soft);color:var(--accent)}
 .b-concept{background:var(--amber-soft);color:var(--amber)}
 .b-accad{background:var(--grey-soft);color:var(--ink-mute);border:1px solid var(--line)}
+
+/* ---------- indice dei progetti ---------- */
+.index{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));
+  gap:12px;margin-bottom:44px;
+}
+.index a{
+  display:block;text-decoration:none;
+  background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:15px 17px;transition:border-color .15s ease, transform .15s ease;
+}
+.index a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.index .i-name{
+  font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:16.5px;
+  line-height:1.25;color:var(--ink);display:block;margin-bottom:5px;
+}
+.index .i-desc{display:block;font-size:13.5px;color:var(--ink-mute);line-height:1.45;margin-bottom:9px}
+.index .badge{font-size:10.5px;padding:3px 9px}
+.index .badge::before{width:5px;height:5px}
 
 /* ---------- progetto ---------- */
 .project{
